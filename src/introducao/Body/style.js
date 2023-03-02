@@ -77,7 +77,7 @@ export const Input = styled.input`
     flex: 1;
     heigth:50px;
     width:100px;
-    font-size: 22px;
+    font-size: 18px;
     border: 0;
     color: #FFFFFF;
     margin-left:20px;
@@ -90,7 +90,7 @@ color:white;
 font-weight:bolder;
 width:110px;
 margin-left:60px;
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
   margin-left:30px;
   width:90px;
   font-size:12px;

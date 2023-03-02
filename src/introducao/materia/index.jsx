@@ -30,7 +30,7 @@ const Materias = ({materia, removeMateria, index}) => {
                     <Div1>
                         <Input1 defaultValue={materia} placeholder="Matéria"></Input1>
                         <div>
-                            <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Adicionar Atividades..."></Input>
+                            <Input value={inAtividade} onChange={event => setInatividade(event.target.value)}placeholder="Add Materia..."></Input>
                             <Button onClick={handleSave}>+</Button>
                         </div>
                     </Div1>
