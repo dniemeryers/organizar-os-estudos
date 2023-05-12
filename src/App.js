@@ -1,5 +1,5 @@
 
-import {
+import { 
   BrowserRouter as Router,
   Routes,
   Route,
@@ -28,12 +28,12 @@ function App() {
   
     return (
       <>
-        <Router> 
+       <Router> 
         <Routes>
-            <Route path="/"       element={<Inicio onAddUser={handleSavedados}/>}/>
-            <Route path="/Inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
-            <Route path="/Body"   element={<Body dados={dados}/>}/>
-            <Route path="/Header" element={<Header/>}/>
+            <Route path="*"       element={<Inicio />}/>
+            <Route path="/inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
+            <Route path="/body"   element={<Body dados={dados}/>}/>
+            <Route path="/header" element={<Header/>}/>
           </Routes >
         </Router>       
       </>
