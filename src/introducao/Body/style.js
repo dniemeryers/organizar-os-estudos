@@ -8,6 +8,7 @@ background-color: #010101;
 width: 100%;
 height:auto;
 
+
 @media screen and (max-width:1024px){
   padding-top: 290px;
 
@@ -45,6 +46,9 @@ font-weight:bolder;
 border-radius:50%;
 border:none;
 margin-left:10px;
+&:hover{
+  cursor:pointer;
+ }
 
 
 `
@@ -90,8 +94,12 @@ color:white;
 font-weight:bolder;
 width:110px;
 margin-left:60px;
+&:hover{
+  cursor:pointer;
+ }
 @media screen and (max-width: 800px){
   margin-left:30px;
   width:90px;
   font-size:12px;
+  
 `

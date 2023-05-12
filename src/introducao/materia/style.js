@@ -66,6 +66,9 @@ font-weight:bolder;
 border-radius:50%;
 margin-left: 10px;
 border:none;
+&:hover{
+    cursor:pointer;
+   }
    
 `
 export const ButtonRemove = styled.button`
@@ -82,6 +85,7 @@ border-radius:5px;
 margin-left: 10px;
 border:none;
     &:hover{
+        cursor:pointer;
          background-color:red;
          scale:1.2;
 }
@@ -102,6 +106,7 @@ color:white;
 margin-top:10px;
 margin-left:13px;
   &:hover{
+    cursor:pointer;
     background-color:red;
     scale:1.2;
   }

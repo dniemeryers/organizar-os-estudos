@@ -49,25 +49,8 @@ export const BuscarInputContainer = styled.div`
     display:flex;
 `
 
-export const Menu = styled.a`
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    margin-right: 12px;
-`
 
-export const MenuRight = styled.a`
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-size: 12px;
-    line-height: 25px;
-    color: #FFFFFF;
-    margin-right: 12px;
-    text-decoration: none;
-`
+
 
 export const UserPicture = styled.img`
     width: 150px;
@@ -117,6 +100,10 @@ export const Addimagen = styled.input`
     margin-left:-38px;
     margin-top:-3px;
     padding-top:6px;
+    &:hover{
+        cursor:pointer;
+       
+    }
         @media screen and (max-width: 400px){
             width:0px;
             margin:0;
@@ -135,6 +122,13 @@ export const Salvar = styled.button`
     border:none;
     border-radius:10px;
     box-shadow: 0px 0px 8px 2px white;
+    &:hover{
+        cursor:pointer;
+        background-color: gray;
+        color:#1c1c1c;
+
+    }
+    
 `
 export const Buttons = styled.div`
     width:100%;

@@ -7,14 +7,8 @@ export const Body = ({dados})=>{
 
         const [inMateria, setInmateria] = useState("")
         const [materia, setMateria,] = useState([])
-             
-       /* function saveMateria(data){ 
-        let newMateria = [...materia]
-        newMateria.push(inMateria)
-        setMateria(newMateria)
-        setInmateria('')
-        }*/
-        
+       
+            
         function saveMateria(data){
           setMateria(prevMateria => [ ...prevMateria,inMateria])
           setInmateria("")
