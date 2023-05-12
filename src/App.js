@@ -23,12 +23,14 @@ function App() {
    setDados(newDados) 
    
   }  
+
+  
     return (
       <>
       <div className="App">
        <Router> 
         <Routes>
-            <Route path="/"       element={<Inicio />}/>
+            <Route exact path="/"       element={<Inicio />}/>
             <Route path="/inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
             <Route path="/body"   element={<Body dados={dados}/>}/>
             <Route path="/header" element={<Header/>}/>
