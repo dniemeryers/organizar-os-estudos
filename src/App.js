@@ -30,7 +30,7 @@ function App() {
       <div className="App">
        <Router> 
         <Routes>
-            <Route exact path="/"       element={<Inicio />}/>
+            <Route exact path="/"       element={<Inicio onAddUser={handleSavedados} />}/>
             <Route path="/inicio" element={<Inicio onAddUser={handleSavedados}/>}/>
             <Route path="/body"   element={<Body dados={dados}/>}/>
             <Route path="/header" element={<Header/>}/>

@@ -23,12 +23,10 @@ export const Body = ({dados})=>{
        }
 
        function removeMateria(index) {
-        setMateria(prevMateria => {
-          
-         
-      const newMateria = [...prevMateria];
-          newMateria.splice(index, 1);
-          return newMateria;
+        setMateria(prevMateria => {         
+            const newMateria = [...prevMateria];
+                newMateria.splice(index, 1);
+            return newMateria;
         });
       }
         
