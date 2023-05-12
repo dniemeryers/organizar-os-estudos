@@ -22,12 +22,10 @@ function App() {
    newDados.push(user)
    setDados(newDados) 
    
-  }
-
- 
-  
+  }  
     return (
       <>
+      <div className="App">
        <Router> 
         <Routes>
             <Route path="/"       element={<Inicio />}/>
@@ -35,7 +33,8 @@ function App() {
             <Route path="/body"   element={<Body dados={dados}/>}/>
             <Route path="/header" element={<Header/>}/>
           </Routes >
-        </Router>       
+        </Router>   
+        </div>    
       </>
     );
   }
