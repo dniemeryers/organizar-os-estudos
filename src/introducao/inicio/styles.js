@@ -35,6 +35,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin:auto;
+  
    
 `
 
@@ -74,6 +75,7 @@ export const Input = styled.input`
 `
 export const File = styled.div`
     display:flex;
+    
     margin-top:-55px;
     margin-bottom:10px;
     margin-left:120px;
@@ -86,6 +88,7 @@ export const Text = styled.img`
     height:30px;
     border-radius:50%;
     border: 2px solid white;
+    position:absolute;
 `
 
 export const Div = styled.div`
@@ -94,22 +97,26 @@ export const Div = styled.div`
 `
 
 export const Addimagen = styled.input`
+    display:flex;
+    background:transparent;
     width:0px;
-    margin-top:6px;
-    padding-left:38px;
-    margin-left:-38px;
-    margin-top:-3px;
-    padding-top:6px;
+    padding-bottom:5px;   
+    padding-left:30px;
+    position:absolute;
+    margin-top:5px;
+    
     &:hover{
         cursor:pointer;
        
     }
         @media screen and (max-width: 400px){
+           
             width:0px;
-            margin:0;
-            margin-left:-5px;
-            margin-top:3px;
-            padding-left:33px;
+            paddin-bottom:5px;
+            margin-left:5px;
+            padding-left:32px;
+          
+           
     }
 `
 export const Salvar = styled.button`
@@ -129,6 +136,9 @@ export const Salvar = styled.button`
 
     }
     
+`
+export const Div1 = styled.div`
+margin-bottom:50px;
 `
 export const Buttons = styled.div`
     width:100%;

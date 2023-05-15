@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useNavigate } from "react-router-dom";
 import usuario from '../../assets/minha-conta.png'
 import upload from '../../assets/foto.jpg'
-import { Container, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1,File,Text} from './styles';
+import { Container,Div1, Wrapper,  Row, UserPicture, Input, Addimagen, Salvar,Buttons,H1,File,Text} from './styles';
 
 
 
@@ -59,7 +59,7 @@ function Inicio({onAddUser}) {
       <Container>
           <H1>Organizando os Estudos</H1>
           <Row>
-            <div>
+            <Div1>
               {image ? (
                 <UserPicture src={image} alt="user_image" />
               ) : (
@@ -76,7 +76,7 @@ function Inicio({onAddUser}) {
                   >
               </Addimagen>
               </File>
-            </div>
+            </Div1>
             <Input value={nome} onChange={event => setNome(event.target.value)} placeholder='Informe seu nome...'/>
             <Input value={curso} onChange={event => setCurso(event.target.value)}placeholder='Informe o nome do curso... '/>
             <Input value={semestre} onChange={event => setSemestre(event.target.value)} placeholder='Semenstre ou Bimestre' />
